@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>National Park Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Domine&vertOpen+Sans+Condensed:300"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mainPage">
+      <header>
+        <h1>National Park Finder</h1>
+        <p>
+          Enter state abbreviation and click submit.
+         </p>
+      </header>
+
+      <form>
+        <input
+          type="text"
+          id="state-search"
+          placeholder="Example: CA"
+          required/>
+          <p>Number of search results</p>
+          <input id="search-results" type="number" min="1" value="10">
+        <button>submit</button>
+      </form>
+      <div id="error-message"></div>
+      <div class="results hidden"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
